@@ -1,0 +1,90 @@
+<!-- Two web-based stopwatches: one that counts down, one that counts up. -->
+<html>
+    <head>
+        <meta charset="UTF-8"/> 
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' 
+            rel='stylesheet' type='text/css'>
+        <title>Two Way Stopwatch</title>
+    </head>
+<body>
+
+    <!-- Split letters for header to make it visually appealing with hover effects. --> 
+    <div class="header-container">
+        <div class="header" id="decoration1"> - </div>
+        <div class="header" id="S">S</div>
+        <div class="header" id="T">T</div>
+        <div class="header" id="O">O</div>
+        <div class="header" id="P">P</div>
+        <div class="header" id="W">W</div>
+        <div class="header" id="A">A</div>
+        <div class="header" id="T">T</div>
+        <div class="header" id="C">C</div>
+        <div class="header" id="H">H</div>
+        <div class="header" id="E">E</div>
+        <div class="header" id="S">S</div>
+        <div class="header" id="decoration2"> - </div>
+    </div>
+
+    <!-- Two stopwatches with their respective displays and set of controls. --> 
+    <!-- Count down stopwatch. -->
+    <div class="stopwatches-container">
+        <div class="stopwatch-object" id="stopwatch-countdown">
+            <div class="stopwatch-title" id="countdown">Count Down</div>
+            <div class="stopwatch-content"> 
+                <div class="stopwatch-icon-container">
+                    <img class="stopwatch-icon" src="assets/images/stopwatch.png">
+                </div>
+                <div class="stopwatch-display-container">
+                    <div class="stopwatch-display" id="countdown-display"> 
+                    0 days 0 hours 0 minutes 0 seconds
+                    </div>
+                </div>
+            </div>
+            <div class="stopwatch-controls">
+                <div class="control-button button-disabled" id="countdown-start">
+                    <div class="start-text" id="countdown-start-text">Start</div>
+                </div>
+                <div class="control-button button-disabled" id="countdown-reset">
+                    <div class="reset-text" id="countdown-reset-text">Reset</div>
+                </div> 
+            </div>
+        </div>
+        <!-- Count up stopwatch. -->
+        <div class="stopwatch-object" id="stopwatch-countup">
+            <div class="stopwatch-title" id="countup">Count Up</div>
+            <div class="stopwatch-content"> 
+                <div class="stopwatch-icon-container">
+                    <img class="stopwatch-icon" src="assets/images/stopwatch.png">
+                </div>
+                <div class="stopwatch-display-container">
+                    <div class="stopwatch-display" id="countup-display"> 
+                    0 days 0 hours 0 minutes 0 seconds
+                    </div>
+                </div>
+            </div>
+            <div class="stopwatch-controls">
+                <div class="control-button button-disabled" id="countup-start">
+                    <div class="start-text" id="countup-start-text">Start</div>
+                </div>
+                <div class="control-button button-disabled" id="countup-reset">
+                    <div class="reset-text" id="countup-reset-text">Reset</div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- User input for seconds to count down/up from. --> 
+    <div class="input-container">
+        <input type="text" class="rounded-border" id="input-seconds" 
+            placeholder="Input integer of seconds" autocomplete="off"> </input>
+    </div>
+    <div class="set-timers-container">
+        <div class="rounded-border button-disabled" id="set-timers">SET TIMERS</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>

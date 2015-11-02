@@ -1,0 +1,215 @@
+/*
+
+Style sheet for index.html. 
+
+*/
+
+body {
+	font-family: 'Libre Baskerville', serif;
+	background-color: #BDEDFF;
+}
+
+/* Classes for repeated objects. */
+.rounded-border {
+	color: black;
+	border: solid black;
+	border-radius: 5px;
+}
+
+.button-disabled {
+	color: black;
+	background-color: #666362;
+	pointer-events: none;
+}
+
+/* Styling for stopwatch header and placement. */
+.header-container {
+	text-align: center;
+}
+
+.header {
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 600;
+	letter-spacing: 22px;
+	margin-top: 4%;
+}
+
+.header:hover {
+	color: #FEFCFF;
+	transition: 400ms;
+}
+
+.stopwatches-container {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.stopwatch-object {
+	position: relative;
+	display: inline-block;	
+	width: 500px;
+	height: 220px;
+	margin: 50px 20px 20px 20px;
+}
+
+.stopwatch-title {
+	position: absolute;
+	font-size: 22px;
+	width: 150px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* Styling for stopwatch display. */
+.stopwatch-content {
+	position: relative;
+	width: 90%;
+	height: 100%;
+}
+
+.stopwatch-icon-container {
+	position: absolute;
+	display: inline-block;
+	left: -12%;
+	margin-top: 4%;
+}
+
+.stopwatch-icon{
+	position: absolute;
+	width: 150px;
+}
+
+.stopwatch-display-container {
+	position: absolute;
+	display: inline-block;
+	width: 24em;
+	background-color: #F9F8F6;
+	border-style: solid;
+	border-width: 3px 6px 3px 6px;
+	padding: 15px 20px;
+	margin: 10% auto 20% 0;
+	left: 10%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.stopwatch-display {
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Styling for stopwatch control buttons. */
+.stopwatch-controls {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.control-button {
+	display: inline-block;
+	text-align: center;
+	width: 70px;
+	height: 70px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 50px;
+	margin: 20px 20px;
+}
+
+.control-button:hover {
+	cursor: pointer;
+}
+
+.start-button {
+	background-color: #40DD50;
+}
+
+.start-button:hover {
+	background-color: #6AFB92;
+}
+
+.start-button:active {
+	background-color: #0EAB1E;
+}
+
+.pause-button {
+	background-color: #F62817;
+}
+
+.pause-button:hover {
+	background-color: #FF6453;
+}
+
+.pause-button:active {
+	background-color: #BA0000;
+}
+
+.start-text {
+	font-size: 18px;
+	line-height: 70px;
+}
+
+.reset-button {
+	background-color: white;
+}
+
+.reset-button:hover {
+	background-color: #D1D0CE;
+}
+
+.reset-button:active {
+	background-color: #8B8A88;
+}
+
+.reset-text {
+	font-size: 18px;
+	line-height: 70px;
+}
+
+/* Styling for input seconds form. */
+.input-container {
+	text-align: center;
+}
+
+#input-seconds {
+	font-size: 22px;
+	width: 300px;
+	height: 50px;
+	border-width: 1px;
+}
+
+#input-seconds:focus {
+	background-color: #E5E4E2;
+}
+
+/* Styling for set timers button. */
+.set-timers-container {
+	text-align: center;
+}
+
+.set-timers-color {
+	background-color: #FF7F50;
+}
+
+#set-timers {
+	margin: auto;
+	width: 200px;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	border-width: 2px;
+	padding: 10px 0px;
+	margin-top: 20px;
+}
+
+#set-timers:hover {
+	background-color: #FFC596;
+	cursor: pointer;
+}
+
+#set-timers:active {
+	background-color: #CD4D1E;
+}
