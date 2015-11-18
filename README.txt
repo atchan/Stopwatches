@@ -8,5 +8,4 @@ Two sets of stopwatch controls: start/pause button and reset button (one for eac
 Stopwatch displays: days, hours, minutes, and seconds (i.e. "2 days 3 hours 15 minutes 12 seconds").
 When a stopwatch reaches its goal, counting stops and button controls become disabled.
 
-VIEW WITH: http://htmlpreview.github.io/
-Enter into page: https://github.com/atchan/stopwatches/blob/master/index.html
+View here: http://htmlpreview.github.io/?https://github.com/atchan/stopwatches/blob/master/index.html
